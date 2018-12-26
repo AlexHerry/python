@@ -1,0 +1,6 @@
+# -*-encoding:utf-8 -*-
+import easygui
+test = easygui.choicebox("你最喜欢吃那种口味的冰淇淋?",
+                         choices = ['草莓','芒果','香草'])
+a = '你选择'
+easygui.msgbox('你选择' + test)
