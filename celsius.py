@@ -1,5 +1,8 @@
-# -*-coding:gb2312 -*-
-print "½«»ªÊÏ¶È¸ÄÎªÉãÊÏ¶È"
-F = input("ÇëÊäÈëÒ»¸ö»ªÊÏ¶ÈÎÂ¶È:\n")
+# -*-coding:utf-8 -*-
+import easygui
+easygui.msgbox("è¿™ä¸ªç¨‹åºå°†åæ°åº¦æ”¹ä¸ºæ‘„æ°åº¦")
+F = float(easygui.integerbox("è¯·è¾“å…¥ä¸€ä¸ªåæ°åº¦æ¸©åº¦:",
+                       lowerbound=-999,
+                       upperbound=999))
 C = 5.0 / 9 * (F-32)
-print "ËüµÄÉãÊÏ¶ÈÎÂ¶ÈÊÇ:",C
+easygui.msgbox("å®ƒçš„æ‘„æ°åº¦æ¸©åº¦æ˜¯:"+ str(C))
